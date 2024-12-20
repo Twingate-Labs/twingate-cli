@@ -1,7 +1,7 @@
 import re
 
 def does_addr_match_res_definition(resource_definition,addr):
-    regex_definition = resource_definition.replace(".","\.").replace("*",".*").replace("?",".?")
+    regex_definition = resource_definition.replace(".",r"\.").replace("*",".*").replace("?",".?")
     x = re.search(regex_definition, addr)
     if x:
         #print(x[0])
