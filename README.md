@@ -5,7 +5,12 @@ A simple command line interface for Twingate in Python
 ## How to use it
 
 1. Clone this repository
-2. Install pandas for python (pip install pandas)
+2. Install the required packages
+
+```
+pip install -r requirements.txt
+```
+
 3. Authenticate (you can pass a Session Name or let it generate one at random):
 
 ```
